@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const reverseValue = value => 8 - value; // Reversering: 1=7, 2=6, 3=5, 4=4, 5=3, 6=2, 7=1
 
         const categories = {
-            Prokrastinering: [1, 2, 3, 4, 5],
+            Fravær_av_prokrastinering: [1, 2, 3, 4, 5],
             Oppmerksomhetskontroll: [6, 7, 8, 9, 10],
             Impulskontroll: [11, 12, 13, 14, 15],
             Emosjonell_kontroll: [16, 17, 18, 19],
