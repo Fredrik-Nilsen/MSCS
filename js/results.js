@@ -11,9 +11,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
         const categories = {
             Prokrastinering: [1, 2, 3, 4, 5],
-            Konsentrasjon: [6, 7, 8, 9, 10],
-            Impulser: [11, 12, 13, 14, 15],
-            Emosjoner: [16, 17, 18, 19],
+            Oppmerksomhetskontroll: [6, 7, 8, 9, 10],
+            Impulskontroll: [11, 12, 13, 14, 15],
+            Emosjonell_kontroll: [16, 17, 18, 19],
             Målorientering: [20, 21, 22, 23],
             Selvkontrollstrategier: [24, 25, 26, 27, 28, 29],
             Inhibering: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],
