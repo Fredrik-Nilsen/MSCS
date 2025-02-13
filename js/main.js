@@ -89,26 +89,4 @@ document.addEventListener("DOMContentLoaded", function() {
         // Redirect to results page
         window.location.href = 'results.html';
     });
-
-    // Handle download of responses
-    const downloadButton = document.getElementById('downloadResponses');
-    downloadButton.addEventListener('click', function() {
-        const responses = JSON.parse(localStorage.getItem('mscsResults'));
-        if (!responses) {
-            alert('Ingen besvarelser funnet.');
-            return;
-        }
-
-        const csvContent = "data:text/csv;charset=utf-8," + 
-            Object.keys(responses).map(key => `${key},${responses[key]}`).join("\n");
-
-        const encodedUri = encodeURI(csvContent);
-        const link = document.createElement("a");
-        link.setAttribute("href", encodedUri);
-        link.setAttribute("download", "mscs_responses.csv");
-        document.body.appendChild(link); // Required for FF
-
-        link.click();
-        document.body.removeChild(link);
-    });
 });
